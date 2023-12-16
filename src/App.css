@@ -1,0 +1,222 @@
+*{
+   margin: 0;
+   padding: 0;  
+}
+body{
+  background-color: #edf2f4;
+  font-family: 'Ubuntu', sans-serif;  
+}
+.App{
+  background-color: #ffffff;
+  width: 70%;
+  margin: auto; 
+  
+}
+.letstartbgn{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.7s;
+}
+.letstartbgn:hover{
+  box-shadow: none;
+
+}
+
+ label{
+  color: rgb(116, 116, 116);
+  font-size: 20px;
+ }
+.input-style{
+  outline: none;
+  width: 380px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border:  1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+.input-style::placeholder{ 
+  color: #b8b8b8;
+}
+#job-description{
+  resize: none;
+  height: 150px;
+
+}
+.input-style:hover{
+  border: 1px solid rgb(94, 169, 255);
+}
+.input-style:focus{ 
+  box-shadow: rgb(94, 169, 255) 0px 0px 6px 0px;
+  
+}
+/* error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* start template */
+
+
+.templateContainer{
+   background-color:  #fff;
+   width:70%;
+   margin: 0 auto;
+   padding: 20px 60px;  
+ }
+ .fullName{
+   font-size: 3rem;
+   color: #ff715b;
+   text-align: center;
+ }
+ .templatContnet{
+    display : grid ;
+    grid-template-columns : 1fr 1fr;
+    color: #494949
+ }
+.imageContainer{
+  margin-top : 50px
+}
+.image{ 
+  object-fit : cover  ; 
+  border-radius : 100px;
+  border:  5px solid #ff715b;
+  width: 150px;
+  height: 150px; 
+}
+.personalSkills{
+   margin-top : 20px
+}
+.personalInfo{
+   display :  flex ;
+   flex-direction :  column ;
+   gap : 10px 
+}
+.skills{
+  margin-top : 50px;
+  display :  flex ;
+   flex-direction :  column ;
+   gap : 10px
+}
+.title{
+  color :  #ff715b ;
+  font-weight: bold;
+}
+.tags{  
+  color: #ff715b ;
+  margin: 5px;
+}
+.education{
+  display : flex  ;
+   flex-direction :  column ;
+   gap : 10px
+}
+.rightSide{
+  margin-top : 50px
+}
+.workExp{
+   display :  flex ;
+   flex-direction : column ;
+   gap : 10px
+}
+.miscellaneous{
+  border-top : 1px solid #333;
+  margin-top : 30px ;
+  display :  flex ;
+  flex-direction :  column;
+  gap : 10px
+}
+/* end template */
+
+ 
+.responsiveWord{
+  font-size : 35px; 
+ 
+}
+.responsiveSteps {  
+  margin-top : 0  
+}
+.responsiveForm{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px; 
+}
+.input-container{
+  margin: 20px auto;
+}
+
+.uplaodImage{
+    width : 200px;
+    height  : 100px;
+    background-color : #fff;
+    display : flex; 
+    justify-content : center;
+    align-items : center;
+    cursor :  pointer;
+    margin-left : 70px; 
+    border : 1px solid #cdcdcd;
+    border-radius : 5px 
+}
+/* NextPrevSubmitButtons */
+.buttonContainer{
+  padding: 50px 0;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 900px) {
+ 
+  .App{ 
+    width: 95%; 
+    
+  }
+  .responsiveWord{
+    font-size: 18px;
+  }
+  .responsiveSteps {  
+    margin-top : 20px  
+  }
+  .responsiveForm{ 
+    grid-template-columns: 1fr ;
+  }
+  .input-container{
+    margin: 5px;
+  }
+  label{
+    font-size: 12px;
+  } 
+  .uplaodImage{
+    margin-left: 5px;
+    margin-top: 10px;;
+  }
+  .templateContainer{ 
+    padding: 20px;  
+  }
+  .templatContainer{
+    display : grid ;
+    grid-template-columns : 1fr 1fr;
+    color: #494949;
+    background-color: #ff715b;
+    padding: 0;
+ }
+ 
+
+ /* template */
+
+ .image {
+  width: 80px;
+  height: 80px;
+  }
+  .fullName{
+    font-size: 20px;
+  }
+  .title{
+    font-size: 15px;
+  }
+  .content{
+    font-size: 10px;
+   }
+}
